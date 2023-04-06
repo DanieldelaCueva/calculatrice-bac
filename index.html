@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="styles/index.css" rel="stylesheet" type="text/css" />
+
+    <!-- Import bootsrtap css via jsDelivr -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <script src="scripts/index.js"></script>
+
+    <title>Calculatrice BAC</title>
+</head>
+<body>
+    <h1 class="main-title">CALCULATRICE NOTES DU BAC / EVAU</h1>
+
+    <div class="container-fluid text-center">
+        <div class="row gx-5" style="width: 100%; margin:auto">
+          <div class="col">
+           <div class="p-3 main-columns">
+                <table class="table table-striped">
+                    <thead>
+                        <tr class="table-dark">
+                            <th colspan="2">PREMIÈRE GÉNÉRALE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="2" class="table-secondary">CONTRÔLE CONTINU</td></tr>
+                        <tr>
+                            <td>Histoire-Géographie</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="hg-1"/> /20</td>
+                        </tr>
+                        <tr>
+                            <td>EMC</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="emc-1"/> /20</td>
+                        </tr>
+                        <tr>
+                            <td>Ens. Scientifique</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="ens-1"/> /20</td>
+                        </tr>
+                        <tr>
+                            <td>LVA (Espagnol)</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="lva-1"/> /20</td>
+                        </tr>
+                        <tr>
+                            <td>LVB (Anglais)</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="lvb-1"/> /20</td>
+                        </tr>
+                        <tr>
+                            <td>SPÉCIALITÉ 1</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="sp1"/> /20</td>
+                        </tr>
+                        <tr><td colspan="2" class="table-secondary">ÉPREUVE ANTICIPÉE DE FRANÇAIS</td></tr>
+                        <tr>
+                            <td>Écrit</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="eaf-e"/> /20</td>
+                        </tr>
+                        <tr>
+                            <td>Oral</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="eaf-o"/> /20</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br />
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr class="table-dark">
+                            <th colspan="2">TERMINALE GÉNÉRALE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="2" class="table-secondary">CONTRÔLE CONTINU</td></tr>
+                        <tr>
+                            <td>Histoire-Géographie</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="hg-t"/> /20</td>
+                        </tr>
+                        <tr>
+                            <td>EMC</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="emc-t"/> /20</td>
+                        </tr>
+                        <tr>
+                            <td>Ens. Scientifique</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="ens-t"/> /20</td>
+                        </tr>
+                        <tr>
+                            <td>LVA (Espagnol)</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="lva-t"/> /20</td>
+                        </tr>
+                        <tr>
+                            <td>LVB (Anglais)</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="lvb-t"/> /20</td>
+                        </tr>
+                        <tr>
+                            <td>EPS</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="eps-t"/> /20</td>
+                        </tr>
+                        <tr>
+                            <td>OPTION 1</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" class="mark-input" id="opt1"/> /20</td>
+                        </tr>
+                        <tr><td colspan="2" class="table-secondary">ÉPREUVES TERMINALES</td></tr>
+                        <tr>
+                            <td>SPÉCIALITÉ 2</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="sp2"/> /20</td>
+                        </tr>
+                        <tr>
+                            <td>SPÉCIALITÉ 3</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="sp3"/> /20</td>
+                        </tr>
+                        <tr>
+                            <td>PHILOSOPHIE</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="philo"/> /20</td>
+                        </tr>
+                        <tr>
+                            <td>GRAND ORAL</td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="go"/> /20</td>
+                        </tr>
+                    </tbody>
+                </table>
+           </div>
+          </div>
+          <div class="col">
+            <div class="p-3 main-columns">
+                <table class="table table-striped">
+                    <thead>
+                        <tr class="table-dark">
+                            <th colspan="2">PRUEBA DE COMPETENCIAS ESPECÍFICAS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="2" class="table-secondary">ESPECÍFICA 1</td></tr>
+                        <tr>
+                            <td>
+                                <select id="esp-1" onchange="convalidate1()">
+                                    <option value="other">Otra</option>
+                                    <option value="sp2-opt">Spécialité 2</option>
+                                    <option value="sp3-opt">Spécialité 3</option>
+                                </select>
+                            </td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="nota-esp-1"/> /10</td>
+                        </tr>
+                        <tr>
+                            <td>Coeficiente</td>
+                            <td class="mark-cell"><input type="number" min="0" max="0.2" required class="mark-input" id="coef-esp-1"/></td>
+                        </tr>
+                        <tr><td colspan="2" class="table-secondary">ESPECÍFICA 2</td></tr>
+                        <tr>
+                            <td>
+                                <select id="esp-2" onchange="convalidate2()">
+                                    <option value="other">Otra</option>
+                                    <option value="sp2-opt">Spécialité 2</option>
+                                    <option value="sp3-opt">Spécialité 3</option>
+                                </select>
+                            </td>
+                            <td class="mark-cell"><input type="number" min="0" max="20" required class="mark-input" id="nota-esp-2"/> /10</td>
+                        </tr>
+                        <tr>
+                            <td>Coeficiente</td>
+                            <td class="mark-cell"><input type="number" min="0" max="0.2" required class="mark-input" id="coef-esp-2"/></td>
+                        </tr>
+                    </tbody>
+                </table>               
+            </div>
+            <div class="p-3 mark-div">
+                <table class="table table-striped main-colums">
+                    <thead>
+                        <tr class="table-primary">
+                            <th colspan="2">NOTES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Note baccalauréat</td>
+                            <td class="mark-cell"><span id="bac-span"></span> /20</td>
+                        </tr>
+                        <tr>
+                            <td>Nota acceso EVAU</td>
+                            <td class="mark-cell"><span id="acceso-span"></span> /10</td>
+                        </tr>
+                        <tr>
+                            <td>Nota admisión EVAU</td>
+                            <td class="mark-cell"><span id="admision-span"></span> /14</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="p-3">
+                <button type="button" class="btn btn-primary calc-button" onclick="calc()">Calculer</button>
+            </div>
+            <div class="p-3 disclaimer">
+                <span>Disclaimer: Cáculos de la nota bac según los coeficientes publicados y de la nota evau según la formula de conversión del ministerio</span>  <br>
+                <span>Daniel De la Cueva 2023</span>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Import bootsrtap js via jsDelivr -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>   
+</body>
+</html>

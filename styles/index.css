@@ -1,11 +1,15 @@
+body{
+    min-width: 380px;
+}
+
 .main-title{
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
 }
 
 .main-columns{
     border: 1px solid #000000;
-    margin: 1.5rem;
+    margin: 1.5rem 1.5rem 0.5rem 1.5rem;
 }
 
 .mark-cell{
@@ -22,7 +26,7 @@
 
 .mark-div{
     border: 1px solid #000000;
-    margin: 3rem 1.5rem 1.5rem 1.5rem;
+    margin: 2rem 1.5rem 1.5rem 1.5rem;
 }
 
 .calc-button{
@@ -31,7 +35,11 @@
 }
 
 .disclaimer{
-    margin: 5rem 0 0 0;
+    margin: 1.5rem 0 0 0;
     text-align: left;
     font-size: 15px;
+}
+
+.bo_link{
+    text-decoration: none;
 }
